@@ -1,0 +1,129 @@
+:root{
+    --primary-red: #FF7979;
+    --secondary-green: #38CC8B;
+    --secondary-purple: #5E54A4;
+    --dark-text: #3D3B48;
+    --text-white: #ffff;
+    --app-border-color: #dedede;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: o;
+    padding: 0;
+    color: var(--dark-text);
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-red) url(../img/bg-intro-desktop.png);
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.intro-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    color: var(--text-white);
+}
+
+.intro-container h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 11px;
+}
+
+.intro-container p{
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.form-container{
+    flex-basis: 50%;
+}
+
+.trial-info{
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-white);
+    background-color: var(--secondary-purple);
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.15);
+    margin-bottom: 24px;
+}
+
+form{
+    background-color: var(--text-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.15);
+}
+
+form input,
+form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input{
+    padding: 15px 32px;
+    border-radius: 5px;
+    border: 1px solid var(--app-border-color);
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    line-height: 26px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+form button{
+    background-color: var(--secondary-green);
+    color: var(--text-white);
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    border-radius: 5px;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border: none;
+    padding: 15px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.terms-and-services{
+    font-family: inherit;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    color: #BAB7D4;
+    margin: 0px;
+}
+
+.terms-and-services a{
+    color: var(--primary-red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
